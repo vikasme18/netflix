@@ -1,0 +1,579 @@
+body {
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.423)), url("./images/netflix-banner.jpg");
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.line {
+    background-color: rgb(35,35,35);
+    height: 8px;
+    border: 0;
+    margin: 0;
+}
+
+/* NAVIGATION SECTION */
+.netflix-logo {
+    width: 12rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10.3%;
+    align-items: center;
+    height: 5.5em;
+}
+
+#nav-left>img {
+    width: 11.5rem;
+}
+
+#nav-right {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+#nav-trans-item {
+    position: relative;
+}
+
+#nav-right > li > select {
+    background-color: rgba(18, 18, 17, 0.54);
+    color: white;
+    appearance: none;
+    text-align: center;
+    font-weight: 600;
+}
+
+#nav-right > li > select > option {
+    color: black;
+}
+
+.nav-element {
+    padding: 8px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.nav-select-element {
+    padding: 8px 40px;
+}
+
+.nav-trans-icon, .nav-dropdown-icon {
+    position: absolute;
+    color: white;
+}
+
+.nav-trans-icon {
+    left: 20px;
+    top: 9px 
+}
+
+.nav-dropdown-icon {
+    top: 8px;
+    left: 110px
+}
+
+.sign-in {
+    background-color: #e50914;
+    color: white;
+    font-weight: 600;
+    border: 0;
+}
+
+/* MAIN SECTION */
+#main {
+    color: white;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 13rem;
+}
+
+#main > h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 2erm;
+}
+
+#main > h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#main > p {
+    font-size: 1.25rem;
+    color: #fbfdfe;
+}
+
+.join-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-field > input {
+    background-color: rgba(31, 29, 27, 0.545);
+    padding: 1.2% 1rem;
+    font-size: 1rem;
+    width: 23%;
+    color: white;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 1px solid #52606e;
+}
+
+.join-field > button {
+    background-color: #e50914;
+    color: white;
+    border: 0;
+    padding: 1% 15px;
+    border-radius: 5px;
+    width: 12rem;
+    font-size: 1.4rem;
+    display: flex;
+    font-weight: 700;
+    
+}
+
+.join-field > button > svg {
+    margin-left: 10px;
+}
+
+/* TV SECTION */
+#tv {
+    background-color: black;
+}
+
+#tv-inner {
+    margin: auto 12.5%;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#enjoy {
+    width: 48%;
+}
+
+#tv-video {
+    width: 48%;
+    position: relative;
+}
+
+#enjoy > h2 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 900;
+}
+
+#enjoy > p {
+    color: rgb(245,238,232);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+#tv-video > img {
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    z-index: 2;
+}
+
+#tv-video > video {
+    position: absolute;
+    left: 13%;
+    top: 20.5%;
+    width: 73%; 
+    z-index: 1;
+}
+
+/* DOWNLOAD SECTION */
+#download-cont {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#download-left {
+    width: 48%;
+}
+
+#download-iphone-cont > img {
+   width: 100%; 
+}
+
+#download-right {
+    color: white;
+    width: 48%;
+}
+
+#download-right > h2 {
+    font-size: 3.2rem;
+}
+
+#download-right > p {
+    font-size: 1.5rem;
+}
+
+/* KIDS SECTION */
+#kids {
+    display: flex;
+    align-items: center;
+    padding: 5% 10%;
+}
+
+#kids-div2 {
+    color: white;
+}
+
+#kids-div2 > h1 {
+    font-size: 3rem;
+}
+
+#kids-div2 > p {
+    font-size: 1.5rem;
+}
+
+/* WATCH EVERYWHERE SECTION */
+#watch-everywhere {
+    padding: 4rem 0;
+}
+
+#watch-everywhere-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 11%;
+}
+
+#watch-everywhere-desc {
+    padding-right: 4%;
+}
+
+#watch-everywhere-desc > h1 {
+    font-size: 3.2rem;
+    margin-bottom: 0;
+}
+
+#watch-everywhere-desc > p {
+    font-size: 1.4rem;
+}
+
+#watch-everywhere-video {
+    display: flex;
+    position: relative;
+}
+
+#watch-everywhere-video > img {
+    z-index: 2;
+}
+
+#watch-everywhere-video > video {
+    position: absolute;
+    width: 50%;
+    top: 12%;
+    left: 19%;
+    width: 61%;
+}
+
+/* FAQ SECTION */
+#faq {
+    width: 75%;
+    margin: auto;
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.faq-cont {
+    margin-top: 8px;
+}
+
+#faq > h2 {
+    text-align:center;
+    font-size: 3rem;
+}
+
+.que {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(45,45,45);
+    padding: 0rem 1rem;
+}
+
+.que > h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.ans {
+    background-color: rgb(45,45,45);
+    padding: 1rem 2rem 1rem 1rem;
+    margin-top: 1.5px;
+    position: relative;
+    display: none;
+}
+
+.ans > p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.faq-cont:hover .ans {
+    display: block;
+}
+
+#faq-join {
+    margin-top: 3rem;
+}
+
+#faq-join > h3 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* FOOTER SECTION */
+#footer {
+    top: 400px;
+    color: rgb(155,152,146);
+    padding: 0 22% 3% 12%;
+    font-weight: 500;
+    margin-top: 4rem;
+}
+
+.contact {
+    color: rgb(155,152,146);
+}
+
+.footer-outer {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-inner {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-inner > li > a {
+    color: rgb(155,152,146);
+    font-size: 0.9rem;
+}
+
+.footer-inner > li {
+    padding: 10px 0;
+    
+}
+
+#footer select {
+    background-color: black;
+    color: white;
+    width: 8.5rem;
+    appearance: none;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.translate-btn > select > option {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.translate-btn {
+    position: relative;
+}
+
+.drop-icon {
+    position: absolute;
+    top: 17px;
+    left: 102px;
+}
+
+.trans-icon {
+    position: absolute;
+    top:18px;
+    left: 12px;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        background-size: 318%;
+    }
+
+    /* NAV */
+    nav {
+        padding: 0 3%; 
+    }
+
+    #nav-left>img {
+        width: 7rem;
+    }
+
+    /* MAIN */
+    #main {
+        padding-top: 1.5rem;
+        margin: 0 4.5%;
+        padding-bottom: 2.5rem;
+    }
+
+    #main > h1 {
+        font-size: 2rem;
+    }
+
+    #main > h3 {
+        font-size: 1.125rem;
+    }
+
+    #main > p {
+        font-size: 1.125rem;
+        margin: 6% 7% 5% 7%;
+    }
+
+    .join-field {
+        flex-direction: column;
+    }
+
+    .join-field > input {
+        width: 75%;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .join-field > button {
+        padding: 10px 8px;
+        font-size: 1.1rem;
+        text-align: center;
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .join-field > button > svg {
+        margin-left: 4px;
+    }
+
+    /* TV */
+
+    #tv-inner {
+        display: block;
+        margin: auto;
+        padding: 3rem 0;
+        width: 90%;
+    }
+
+    #enjoy {
+        width: 100%;
+    }
+
+    #enjoy > h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #enjoy > p {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+    #tv-video {
+        width: 100%;
+    }
+
+    /* DOWNLOAD */
+    #download-cont {
+        flex-direction: column;
+        padding: 3rem 0;
+        width: 90%;
+    }
+
+    #download-left {
+        width: 100%;
+    }
+
+    #download-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    #download-right > h2 {
+        font-size: 2rem;
+    }
+
+    #download-right > p {
+        font-size: 1.125rem;
+    }
+
+    #watch-everywhere-inner {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    /* KIDS */
+    #kids {
+        flex-direction: column;
+        padding: 10% 5%;
+    }
+
+    #kids-div1 > img {
+        width: 100%;
+    }
+
+    #kids-div2 > h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #kids-div2 > p {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+
+
+    /* FAQ */
+    #faq {
+        width: 90%;
+    }
+    #faq > h2 {
+        font-size: 2rem;
+    }
+    .que > h3 {
+        font-size: 1.125rem;
+    }
+
+    #watch-everywhere-video > img {
+        width: 100%;
+    }
+    
+    #watch-everywhere-desc {
+        text-align: center;
+    }
+
+    #watch-everywhere-desc > h1 {
+        font-size: 2.1rem;
+        margin-top: 0;
+    }
+
+    #watch-everywhere-desc > p {
+        font-size: 1.15rem;
+    }
+}
